@@ -110,9 +110,9 @@ ts 111
 @-@ 110
 or 109
 going 108
-b@@ 107
 too 107
 come 107
+b@@ 106
 now 106
 ted 104
 un@@ 103
@@ -267,15 +267,15 @@ them 54
 o 54
 h@@ 54
 went 54
-p 54
 without 54
-C@@ 54
 English 54
 little 54
 everything 53
 fi@@ 53
 into 53
+p 53
 de 53
+C@@ 53
 S@@ 53
 off 52
 down 52
@@ -446,6 +446,7 @@ ol@@ 33
 et@@ 33
 teacher 33
 : 33
+M@@ 33
 ation 33
 ke 33
 ful 33
@@ -462,11 +463,11 @@ x@@ 32
 write 32
 morning 32
 kind 32
-M@@ 32
 fell 32
 brother 32
 cold 32
 gre@@ 32
+j@@ 32
 found 31
 ne@@ 31
 des@@ 31
@@ -566,6 +567,7 @@ cal 26
 easy 26
 em@@ 26
 wouldn 26
+ear@@ 26
 table 26
 food 26
 Japanese 26
@@ -586,7 +588,6 @@ early 25
 together 25
 arrived 25
 story 25
-ear@@ 25
 himself 25
 else 25
 gra@@ 25
@@ -614,11 +615,11 @@ um@@ 24
 pe@@ 24
 German 24
 place 24
+B@@ 24
 fe@@ 24
 haven 24
 sur@@ 24
 meeting 24
-j@@ 24
 sleep 24
 death 23
 ll 23
@@ -636,7 +637,6 @@ reason 23
 phone 23
 small 23
 lan@@ 23
-B@@ 23
 once 23
 everybody 23
 wife 23
@@ -819,6 +819,7 @@ sin@@ 17
 wait 17
 paper 17
 dered 17
+J@@ 17
 ms 17
 walked 17
 ici@@ 17
@@ -840,7 +841,6 @@ birthday 17
 bring 17
 road 17
 began 17
-ped 17
 poor 17
 part 17
 ors 17
@@ -859,7 +859,6 @@ ving 16
 Un@@ 16
 chance 16
 sent 16
-J@@ 16
 lunch 16
 bel@@ 16
 Germany 16
@@ -881,6 +880,7 @@ dead 16
 glad 16
 mistakes 16
 hea@@ 16
+coo@@ 16
 finally 16
 street 16
 ent@@ 16
@@ -911,7 +911,6 @@ fish 15
 dress 15
 F@@ 15
 became 15
-oo@@ 15
 dri@@ 15
 drive 15
 difficult 15
@@ -926,7 +925,6 @@ trust 15
 ul@@ 15
 finished 15
 ran 15
-coo@@ 15
 clothes 15
 ance 15
 hurt 15
@@ -957,6 +955,7 @@ wine 14
 thy 14
 ss 14
 pp@@ 14
+oo@@ 14
 stri@@ 14
 swim 14
 happen 14
@@ -968,6 +967,7 @@ kno@@ 14
 ture 14
 men 14
 dangerous 14
+H@@ 14
 unds 14
 six 14
 inter@@ 14
@@ -979,6 +979,7 @@ dge 14
 fl@@ 14
 med 14
 thank 14
+U@@ 14
 ster 14
 tur@@ 14
 spent 14
@@ -1026,7 +1027,6 @@ town 13
 wrote 13
 qui@@ 13
 war@@ 13
-H@@ 13
 gro@@ 13
 was@@ 13
 holi@@ 13
@@ -1041,7 +1041,6 @@ piano 13
 ghts 13
 pra@@ 13
 fo@@ 13
-U@@ 13
 either 13
 suit 13
 ters 13
@@ -1509,6 +1508,7 @@ respect 9
 husband 9
 ideas 9
 dance 9
+ped 9
 fer@@ 9
 apple 9
 res@@ 9
@@ -1534,7 +1534,6 @@ Li@@ 9
 f 9
 cards 9
 spi@@ 9
-jum@@ 9
 cks 9
 cap@@ 9
 ls 9
@@ -1703,6 +1702,7 @@ tment 8
 tiv@@ 8
 ghter 8
 effe@@ 8
+umped 8
 appeared 8
 emp@@ 8
 within 8
@@ -2113,7 +2113,6 @@ billi@@ 5
 ka 5
 fal@@ 5
 England 5
-hear@@ 5
 osen 5
 cken 5
 ris@@ 5
@@ -2225,6 +2224,7 @@ ross 4
 ld 4
 Afri@@ 4
 Liisa 4
+hear@@ 4
 volu@@ 4
 Ha@@ 4
 surpri@@ 4
@@ -2408,6 +2408,7 @@ trou@@ 3
 secre@@ 3
 Inter@@ 3
 Vol@@ 3
+P 3
 dest 3
 chil@@ 3
 otor@@ 3
@@ -2525,7 +2526,6 @@ sive 2
 rant 2
 lie@@ 2
 thers 2
-P 2
 uns@@ 2
 Bel@@ 2
 every@@ 2
