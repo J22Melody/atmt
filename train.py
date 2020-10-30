@@ -69,16 +69,6 @@ def main(args):
     tgt_dict = Dictionary.load(os.path.join(args.data, 'dict.{:s}'.format(args.target_lang)))
     logging.info('Loaded a target dictionary ({:s}) with {:d} words'.format(args.target_lang, len(tgt_dict)))
 
-    # Load datasets
-    def load_data(split):
-        return Seq2SeqDataset(
-            src_file=os.path.join(args.data, '{:s}.{:s}'.format(split, args.source_lang)),
-            tgt_file=os.path.join(args.data, '{:s}.{:s}'.format(split, args.target_lang)),
-            src_dict=src_dict, tgt_dict=tgt_dict)
-
-    train_dataset = load_data(split='train') if not args.train_on_tiny else load_data(split='tiny_train')
-    valid_dataset = load_data(split='valid')
-
     # Build model and optimization criterion
     model = models.build_model(args, src_dict, tgt_dict)
     logging.info('Built a model with {:d} parameters'.format(sum(p.numel() for p in model.parameters())))
@@ -99,6 +89,23 @@ def main(args):
     best_validate = float('inf')
 
     for epoch in range(last_epoch + 1, args.max_epoch):
+        # BPE Online Dropout (copy from preprocess_baseline_data.sh)
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 1 < ./baseline/preprocessed_data/train.en  > ./baseline/preprocessed_data/train_bpe.en')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 1 < ./baseline/preprocessed_data/tiny_train.en  > ./baseline/preprocessed_data/tiny_train_bpe.en')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 1 < ./baseline/preprocessed_data/train.de  > ./baseline/preprocessed_data/train_bpe.de')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 1 < ./baseline/preprocessed_data/tiny_train.de  > ./baseline/preprocessed_data/tiny_train_bpe.de')
+        os.system('python3.7 preprocess.py --target-lang en --source-lang de --vocab-src baseline/prepared_data/dict.de --vocab-trg baseline/prepared_data/dict.en --dest-dir baseline/prepared_data/ --train-prefix baseline/preprocessed_data/train_bpe --valid-prefix baseline/preprocessed_data/valid_bpe --test-prefix baseline/preprocessed_data/test_bpe --tiny-train-prefix baseline/preprocessed_data/tiny_train_bpe --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000')
+
+        # Load datasets
+        def load_data(split):
+            return Seq2SeqDataset(
+                src_file=os.path.join(args.data, '{:s}.{:s}'.format(split, args.source_lang)),
+                tgt_file=os.path.join(args.data, '{:s}.{:s}'.format(split, args.target_lang)),
+                src_dict=src_dict, tgt_dict=tgt_dict)
+
+        train_dataset = load_data(split='train') if not args.train_on_tiny else load_data(split='tiny_train')
+        valid_dataset = load_data(split='valid')
+
         train_loader = \
             torch.utils.data.DataLoader(train_dataset, num_workers=1, collate_fn=train_dataset.collater,
                                         batch_sampler=BatchSampler(train_dataset, args.max_tokens, args.batch_size, 1,
