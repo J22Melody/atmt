@@ -90,10 +90,10 @@ def main(args):
 
     for epoch in range(last_epoch + 1, args.max_epoch):
         # BPE Online Dropout (copy from preprocess_baseline_data.sh)
-        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 1 < ./baseline/preprocessed_data/train.en  > ./baseline/preprocessed_data/train_bpe.en')
-        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 1 < ./baseline/preprocessed_data/tiny_train.en  > ./baseline/preprocessed_data/tiny_train_bpe.en')
-        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 1 < ./baseline/preprocessed_data/train.de  > ./baseline/preprocessed_data/train_bpe.de')
-        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --dropout 0.1 --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 1 < ./baseline/preprocessed_data/tiny_train.de  > ./baseline/preprocessed_data/tiny_train_bpe.de')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 1 < ./baseline/preprocessed_data/train.en  > ./baseline/preprocessed_data/train_bpe.en')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 1 < ./baseline/preprocessed_data/tiny_train.en  > ./baseline/preprocessed_data/tiny_train_bpe.en')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 1 < ./baseline/preprocessed_data/train.de  > ./baseline/preprocessed_data/train_bpe.de')
+        os.system('subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 1 < ./baseline/preprocessed_data/tiny_train.de  > ./baseline/preprocessed_data/tiny_train_bpe.de')
         os.system('python3.7 preprocess.py --target-lang en --source-lang de --vocab-src baseline/prepared_data/dict.de --vocab-trg baseline/prepared_data/dict.en --dest-dir baseline/prepared_data/ --train-prefix baseline/preprocessed_data/train_bpe --valid-prefix baseline/preprocessed_data/valid_bpe --test-prefix baseline/preprocessed_data/test_bpe --tiny-train-prefix baseline/preprocessed_data/tiny_train_bpe --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000')
 
         # Load datasets
