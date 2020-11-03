@@ -1,4 +1,4 @@
-. 8566
+. 8582
 the 2701
 I 2572
 you 2254
@@ -88,9 +88,9 @@ ing 146
 es 144
 so 143
 p@@ 143
-s@@ 141
 a@@ 139
 s 138
+s@@ 138
 told 137
 e@@ 133
 us 131
@@ -108,11 +108,11 @@ never 112
 than 112
 ts 111
 @-@ 110
+b@@ 109
 or 109
 going 108
 too 107
 come 107
-b@@ 106
 now 106
 ted 104
 un@@ 103
@@ -163,10 +163,10 @@ i@@ 80
 isn 80
 ch@@ 80
 made 80
+te 80
 lot 79
 say 79
 speak 78
-te 78
 make 77
 does 76
 well 76
@@ -246,7 +246,6 @@ fa@@ 56
 friends 56
 again 56
 sure 56
-r@@ 56
 able 56
 these 56
 name 55
@@ -267,15 +266,16 @@ them 54
 o 54
 h@@ 54
 went 54
+p 54
 without 54
+C@@ 54
 English 54
 little 54
 everything 53
 fi@@ 53
+r@@ 53
 into 53
-p 53
 de 53
-C@@ 53
 S@@ 53
 off 52
 down 52
@@ -446,7 +446,6 @@ ol@@ 33
 et@@ 33
 teacher 33
 : 33
-M@@ 33
 ation 33
 ke 33
 ful 33
@@ -463,11 +462,11 @@ x@@ 32
 write 32
 morning 32
 kind 32
+M@@ 32
 fell 32
 brother 32
 cold 32
 gre@@ 32
-j@@ 32
 found 31
 ne@@ 31
 des@@ 31
@@ -615,11 +614,12 @@ um@@ 24
 pe@@ 24
 German 24
 place 24
-B@@ 24
 fe@@ 24
 haven 24
 sur@@ 24
 meeting 24
+j@@ 24
+Mr 24
 sleep 24
 death 23
 ll 23
@@ -637,6 +637,7 @@ reason 23
 phone 23
 small 23
 lan@@ 23
+B@@ 23
 once 23
 everybody 23
 wife 23
@@ -660,7 +661,6 @@ meet 22
 dinner 22
 fire 22
 hand 22
-bi@@ 22
 books 22
 T@@ 22
 hand@@ 22
@@ -722,6 +722,7 @@ cat 20
 kill 20
 taking 20
 under 20
+bi@@ 20
 lived 20
 care 20
 eyes 20
@@ -819,7 +820,6 @@ sin@@ 17
 wait 17
 paper 17
 dered 17
-J@@ 17
 ms 17
 walked 17
 ici@@ 17
@@ -841,6 +841,7 @@ birthday 17
 bring 17
 road 17
 began 17
+ped 17
 poor 17
 part 17
 ors 17
@@ -858,6 +859,7 @@ ving 16
 Un@@ 16
 chance 16
 sent 16
+J@@ 16
 lunch 16
 bel@@ 16
 Germany 16
@@ -879,7 +881,6 @@ dead 16
 glad 16
 mistakes 16
 hea@@ 16
-coo@@ 16
 finally 16
 street 16
 ent@@ 16
@@ -910,6 +911,7 @@ fish 15
 dress 15
 F@@ 15
 became 15
+oo@@ 15
 dri@@ 15
 drive 15
 difficult 15
@@ -924,6 +926,7 @@ trust 15
 ul@@ 15
 finished 15
 ran 15
+coo@@ 15
 clothes 15
 ance 15
 hurt 15
@@ -955,7 +958,6 @@ wine 14
 thy 14
 ss 14
 pp@@ 14
-oo@@ 14
 stri@@ 14
 swim 14
 happen 14
@@ -978,7 +980,6 @@ dge 14
 fl@@ 14
 med 14
 thank 14
-U@@ 14
 ster 14
 tur@@ 14
 spent 14
@@ -1041,6 +1042,7 @@ piano 13
 ghts 13
 pra@@ 13
 fo@@ 13
+U@@ 13
 either 13
 suit 13
 ters 13
@@ -1079,7 +1081,6 @@ gl@@ 12
 weather 12
 ered 12
 start 12
-stor@@ 12
 hed 12
 head 12
 ic 12
@@ -1138,7 +1139,6 @@ sho@@ 12
 earth 12
 stic 12
 inst@@ 12
-Mr. 12
 tonight 12
 dre@@ 12
 broken 12
@@ -1146,7 +1146,6 @@ ping 12
 takes 12
 ened 12
 correct 12
-Mr 12
 war 12
 ship 12
 reali@@ 12
@@ -1178,6 +1177,7 @@ stan@@ 11
 sla@@ 11
 nu@@ 11
 sign 11
+white 11
 bread 11
 bott@@ 11
 mad 11
@@ -1297,7 +1297,6 @@ cket 10
 apples 10
 floor 10
 ster@@ 10
-ies 10
 beg@@ 10
 sted 10
 stre@@ 10
@@ -1427,7 +1426,6 @@ sitting 9
 dar@@ 9
 minute 9
 tal@@ 9
-white 9
 appro@@ 9
 learning 9
 milk 9
@@ -1508,7 +1506,6 @@ respect 9
 husband 9
 ideas 9
 dance 9
-ped 9
 fer@@ 9
 apple 9
 res@@ 9
@@ -1534,6 +1531,7 @@ Li@@ 9
 f 9
 cards 9
 spi@@ 9
+jum@@ 9
 cks 9
 cap@@ 9
 ls 9
@@ -1702,7 +1700,6 @@ tment 8
 tiv@@ 8
 ghter 8
 effe@@ 8
-umped 8
 appeared 8
 emp@@ 8
 within 8
@@ -1957,6 +1954,7 @@ clear 7
 ,000 6
 sleep@@ 6
 hal@@ 6
+stor@@ 6
 thirsty 6
 Rom@@ 6
 intelli@@ 6
@@ -2021,11 +2019,11 @@ Ja@@ 6
 wonder@@ 6
 York 6
 cool 6
+ite 6
 tches 6
 sult 6
 tie 6
 v 6
-White 6
 teaching 6
 trea@@ 6
 toes 6
@@ -2034,6 +2032,7 @@ posi@@ 6
 ends 6
 nap@@ 6
 success@@ 6
+stories 6
 mach@@ 6
 upset 6
 any@@ 6
@@ -2177,6 +2176,7 @@ Col@@ 4
 xi 4
 vat@@ 4
 sty 4
+ies 4
 tue 4
 eph@@ 4
 gen 4
@@ -2234,7 +2234,6 @@ sch@@ 4
 bar 4
 iness 4
 bs 4
-ite 4
 vel 4
 ind 4
 anadi@@ 4
@@ -2242,6 +2241,7 @@ neigh@@ 4
 belie@@ 4
 Sp@@ 4
 spea@@ 4
+Whi@@ 4
 20@@ 4
 ff 4
 elt 4
@@ -2279,13 +2279,14 @@ ne 4
 La@@ 4
 sent@@ 4
 erg@@ 4
-Dr. 4
+Dr 4
 vern@@ 4
 ight 4
 De@@ 4
 ember 4
 Ger@@ 4
 Roman 4
+rs 4
 Su@@ 4
 od 4
 London 4
@@ -2408,7 +2409,6 @@ trou@@ 3
 secre@@ 3
 Inter@@ 3
 Vol@@ 3
-P 3
 dest 3
 chil@@ 3
 otor@@ 3
@@ -2526,6 +2526,7 @@ sive 2
 rant 2
 lie@@ 2
 thers 2
+P 2
 uns@@ 2
 Bel@@ 2
 every@@ 2
@@ -2680,7 +2681,6 @@ Wir@@ 1
 Teu@@ 1
 Fo@@ 1
 thei@@ 1
-rs 1
 ever@@ 1
 Win@@ 1
 ü@@ 1

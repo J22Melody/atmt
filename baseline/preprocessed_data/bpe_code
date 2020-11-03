@@ -170,8 +170,8 @@ t s</w>
 ou t</w>
 s o</w>
 i s
-S ch
 t r
+S ch
 ha be</w>
 s ich</w>
 u t</w>
@@ -734,13 +734,13 @@ be fore</w>
 P ro
 B e
 se i</w>
+sch n
 s er
 ma de</w>
 lo t</w>
 is n</w>
 g re
 K a
-sch n
 sa y</w>
 s in
 p r
@@ -789,6 +789,7 @@ K in
 wir k
 to day</w>
 ne u
+f ol
 ear s</w>
 F a
 ä ch
@@ -800,7 +801,6 @@ sch ool</w>
 om s</w>
 n iem
 g ing</w>
-f ol
 eh r
 be ss
 z ö
@@ -901,6 +901,7 @@ un ter
 u g</w>
 s ei
 mi l
+k l
 f ir
 do ch</w>
 der n</w>
@@ -911,7 +912,6 @@ t wo</w>
 t en
 n ing</w>
 m in
-k l
 i r</w>
 hä tte</w>
 ein fa
@@ -957,12 +957,12 @@ t re
 s ed</w>
 k einen</w>
 j o
+i te</w>
 ein es</w>
 eh men</w>
 e very</w>
 dre i</w>
 bess er</w>
-b i
 tt le</w>
 te l</w>
 sol l</w>
@@ -983,6 +983,7 @@ m em
 lan ge</w>
 fir st</w>
 di s
+b i
 G es
 th ese</w>
 s ure</w>
@@ -1007,7 +1008,6 @@ rea d</w>
 mü ssen</w>
 mo ther</w>
 j em
-i te</w>
 ge ssen</w>
 dies em</w>
 al ready</w>
@@ -1586,6 +1586,7 @@ v en
 th ose</w>
 st än
 schein t</w>
+r s</w>
 pro blem</w>
 ou s
 o wn</w>
@@ -1695,7 +1696,6 @@ Was ser</w>
 P a
 Fre und</w>
 El ke</w>
-2 0
 zur ück
 zi g</w>
 w eit</w>
@@ -1750,7 +1750,6 @@ re ch
 re as
 ra in</w>
 r t</w>
-r s</w>
 r ich</w>
 pr om
 pas siert</w>
@@ -1782,6 +1781,7 @@ al e</w>
 Wo che</w>
 W ort</w>
 Na men</w>
+M r</w>
 Lehr er</w>
 Japan ese</w>
 z e
@@ -1896,6 +1896,7 @@ Ger man</w>
 B ür
 Au f
 Ab end</w>
+2 0
 1 9
 wi fe</w>
 ver si
@@ -2047,7 +2048,6 @@ s how</w>
 ru n</w>
 ro w
 ro ffen</w>
-r .</w>
 pa y</w>
 ni ce</w>
 nee ds</w>
@@ -2559,7 +2559,6 @@ com es</w>
 clo th
 chan ce</w>
 c ou
-c oo
 bu il
 brau chst</w>
 bis schen</w>
@@ -2683,6 +2682,7 @@ d ge</w>
 cloth es</w>
 c y</w>
 c ut</w>
+c oo
 be steht</w>
 be came</w>
 b lu
@@ -2768,6 +2768,7 @@ lang sam</w>
 l ing</w>
 l ed</w>
 kön nt</w>
+kl ein</w>
 k te</w>
 k os
 k la
@@ -2846,10 +2847,8 @@ Re gen
 R at</w>
 N ä
 N ein</w>
-M r.</w>
 M illi
 L ust</w>
-K l
 J ane</w>
 Hausauf gaben</w>
 H än
@@ -2861,6 +2860,7 @@ D e
 Bi er</w>
 Ar t</w>
 Aben dessen</w>
+2 0</w>
 än dern</w>
 zo g</w>
 z wi
@@ -2933,7 +2933,6 @@ lan gen</w>
 l änger</w>
 l ine</w>
 könn test</w>
-kl ein</w>
 k ä
 k un
 k ten</w>
@@ -3018,6 +3017,7 @@ P rü
 M ö
 L ei
 Ku chen</w>
+K l
 Ih r</w>
 Ha are</w>
 H and
@@ -3227,7 +3227,6 @@ O h</w>
 Na me</w>
 Men sch</w>
 M ü
-M r</w>
 K yo
 K lei
 Groß v
@@ -3254,6 +3253,7 @@ wri ting</w>
 wor ked</w>
 woll ten</w>
 wi ss
+wh ite</w>
 wer s</w>
 war te</w>
 wa gen</w>
@@ -3636,6 +3636,7 @@ fü hren</w>
 fro h</w>
 fre i</w>
 for got</w>
+fol ge</w>
 flo wers</w>
 flo or</w>
 fin dest</w>
@@ -3707,7 +3708,6 @@ Zei t
 Z wei
 Y o
 W it
-W hi
 W ahl</w>
 Universi tät</w>
 Tr aum</w>
@@ -3758,7 +3758,6 @@ B an
 Arbei ts
 Ar zt</w>
 An zug</w>
-2 0</w>
 überra scht</w>
 üb ri
 ü ben</w>
@@ -3769,7 +3768,6 @@ wä ren</w>
 wor ried</w>
 wo ke</w>
 wi ck
-wh ite</w>
 wea k</w>
 w olle</w>
 vor sichtig</w>
@@ -3915,6 +3913,7 @@ ken nst</w>
 k ni
 k lar</w>
 k iss</w>
+j um
 is k
 in telli
 in side</w>
@@ -3963,7 +3962,6 @@ for tun
 for eig
 fol lowing</w>
 fol low</w>
-fol ge</w>
 ff or
 feel ing</w>
 fa ct</w>
@@ -4037,7 +4035,6 @@ Te e</w>
 Span ish</w>
 Schrei b
 Sch ne
-Sch n
 Sch ach
 S ätze</w>
 S to
@@ -4135,7 +4132,6 @@ un k</w>
 un e</w>
 un det</w>
 un ded</w>
-um ped</w>
 tzei tig</w>
 tu ral</w>
 ts los</w>
@@ -4392,11 +4388,11 @@ Y en</w>
 Wör terbuch</w>
 Woh nung</w>
 Win ter</w>
-Whi te</w>
 Wet ter</w>
 W ir
 W il
 W i
+W hi
 Ver gangenheit</w>
 V ögel</w>
 To de</w>
@@ -4409,6 +4405,7 @@ T eil</w>
 T al
 Sit z
 Sch ri
+Sch n
 Sch li
 Sch au
 Sa chen</w>
@@ -4902,7 +4899,7 @@ Euro pe</w>
 Euro p
 E is</w>
 Dor f</w>
-D r.</w>
+D r</w>
 D ok
 Chan ce</w>
 C ol
@@ -4999,3 +4996,6 @@ stron aut</w>
 strich en</w>
 stra ight</w>
 str en
+stor ies</w>
+sti ft</w>
+stel l

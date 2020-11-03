@@ -1,4 +1,4 @@
-. 8237
+. 8242
 , 3268
 ich 2508
 Tom 2044
@@ -15,7 +15,7 @@ es 940
 der 903
 in 749
 hat 659
-ein 644
+ein 643
 und 616
 dass 562
 ! 533
@@ -53,9 +53,9 @@ ten 257
 bin 249
 k@@ 241
 im 240
+te 238
 aus 237
 sein 237
-te 236
 um 224
 dich 223
 hast 217
@@ -65,7 +65,7 @@ sehr 190
 dir 190
 uns 187
 wird 186
-t@@ 184
+t@@ 185
 hier 177
 nach 173
 sch@@ 169
@@ -104,17 +104,16 @@ des 126
 st 126
 ch@@ 126
 gut 125
-F@@ 125
 zum 125
-T@@ 123
+F@@ 124
 nichts 123
 M@@ 123
 z@@ 123
+T@@ 122
 will 122
 mehr 120
 f@@ 120
 bei 120
-l@@ 120
 bitte 118
 seine 117
 s 116
@@ -125,6 +124,7 @@ ihm 115
 S@@ 115
 W@@ 114
 bist 114
+l@@ 114
 e@@ 114
 am 112
 ab@@ 111
@@ -149,19 +149,19 @@ sagen 100
 ä@@ 99
 heute 98
 einer 98
-ge 98
 wer 97
 alle 97
+ge 97
 ü@@ 96
 möchte 96
 ei@@ 95
-s@@ 94
+s@@ 93
 P@@ 93
 gibt 93
 H@@ 92
 gt 92
 ter 92
-r@@ 91
+r@@ 90
 ent@@ 90
 würde 90
 auch 90
@@ -296,12 +296,11 @@ N@@ 55
 diesem 55
 Auto 55
 müssen 55
-ol@@ 54
 ie 54
 gemacht 54
 w@@ 54
 Zimmer 54
-ft 53
+ol@@ 53
 ber@@ 53
 sten 53
 sa@@ 53
@@ -352,6 +351,7 @@ gesch@@ 48
 di@@ 47
 lei@@ 47
 Frau 47
+ft 47
 tz@@ 47
 diesen 47
 he 46
@@ -386,6 +386,7 @@ wei@@ 43
 te@@ 43
 lass 43
 ie@@ 43
+o 43
 la@@ 43
 ins 43
 lä@@ 43
@@ -399,14 +400,13 @@ Uhr 42
 fahren 42
 hei@@ 42
 ßen 42
-o 42
 Leute 42
-o@@ 42
 los 41
 dort 41
 ün@@ 41
 det 41
 men 41
+o@@ 41
 Englisch 41
 se 40
 ke 40
@@ -436,7 +436,6 @@ erte 38
 gab 38
 ir@@ 38
 ts@@ 38
-sti@@ 38
 den@@ 38
 ganz 38
 seit 38
@@ -526,6 +525,7 @@ sollten 32
 om@@ 32
 ckt 32
 Un@@ 32
+sti@@ 32
 ausge@@ 31
 tut 31
 bringen 31
@@ -853,6 +853,7 @@ tion 20
 Fenster 19
 schwimmen 19
 zimmer 19
+schn@@ 19
 eit 19
 beste 19
 dafür 19
@@ -892,7 +893,6 @@ gegeben 19
 Ende 19
 ziehen 18
 us@@ 18
-schn@@ 18
 sofort 18
 ale 18
 passt 18
@@ -1179,6 +1179,7 @@ egal 14
 feh@@ 14
 For@@ 14
 Schwierigkeiten 14
+klein 14
 mitt@@ 14
 lieben 14
 Ko@@ 14
@@ -1246,7 +1247,6 @@ to@@ 13
 ändern 13
 uss@@ 13
 erin 13
-Kl@@ 13
 Dinge 13
 großen 13
 Ihr 13
@@ -1271,7 +1271,6 @@ sin@@ 13
 Satz 13
 spiel@@ 13
 sches 13
-klein 13
 des@@ 13
 drin@@ 13
 fand 13
@@ -1342,6 +1341,7 @@ Tiere 12
 aufge@@ 12
 beantwor@@ 12
 Frei@@ 12
+Kl@@ 12
 anische 12
 al 12
 Preis 12
@@ -1544,7 +1544,6 @@ Laden 11
 kamen 11
 hinter 11
 Haup@@ 11
-v@@ 11
 schloss 11
 öffnen 10
 ien 10
@@ -1620,6 +1619,7 @@ steh@@ 10
 iges 10
 Verk@@ 10
 schö@@ 10
+folge 10
 gl@@ 10
 eben 10
 jap@@ 10
@@ -1670,7 +1670,6 @@ tau@@ 10
 hinter@@ 10
 mel@@ 10
 Bi@@ 10
-stel@@ 10
 heiraten 10
 spiele 10
 oben 10
@@ -1706,6 +1705,7 @@ eigenen 10
 hörst 10
 Bob 10
 Studenten 10
+v@@ 10
 Bau@@ 10
 nächstes 10
 plötzlich 10
@@ -1838,15 +1838,14 @@ Bel@@ 9
 abzu@@ 9
 geblieben 9
 süchtig 9
-folge 9
 gin@@ 9
 zeich@@ 9
+20 9
 Woher 9
 Auge 9
 schicken 9
 meinst 9
 unten 9
-Schn@@ 9
 geschehen 9
 ichte 9
 oto@@ 9
@@ -2049,6 +2048,7 @@ Tatoeba 8
 Freude 8
 Luft 8
 ät 8
+Schn@@ 8
 neu 8
 zuvor 8
 rte 8
@@ -2530,6 +2530,7 @@ usst 6
 wartet 6
 Minu@@ 6
 nu@@ 6
+stift 6
 bro@@ 6
 warf 6
 erzäh@@ 6
@@ -2577,7 +2578,6 @@ ige 6
 tiger 6
 öffent@@ 6
 anada 6
-20@@ 6
 Mis@@ 6
 ältung 6
 wünsche 6
@@ -2589,6 +2589,7 @@ Geh@@ 6
 emp@@ 6
 strichen 6
 Pla@@ 6
+stell@@ 6
 wahr@@ 6
 At@@ 6
 verschiedene 6
@@ -2666,6 +2667,7 @@ ledi@@ 5
 beschäfti@@ 5
 tage 5
 ros@@ 5
+v 5
 haus 5
 unser@@ 5
 Geheim@@ 5
@@ -2692,7 +2694,6 @@ ton@@ 5
 Wo@@ 5
 pe 5
 arri@@ 5
-7@@ 5
 E 5
 spro@@ 5
 gn@@ 5
@@ -2701,7 +2702,6 @@ geschi@@ 5
 mom@@ 5
 rad 5
 fall@@ 5
-20 5
 brochen 5
 ini@@ 5
 ph@@ 5
@@ -2730,6 +2730,7 @@ Esperanto 5
 Win@@ 5
 Oh 5
 hause 5
+7 5
 under 5
 plan@@ 5
 pro@@ 5
@@ -2783,7 +2784,6 @@ blei@@ 5
 Fr@@ 5
 ble@@ 4
 Geb@@ 4
-v 4
 tie@@ 4
 ouri@@ 4
 ras@@ 4
@@ -2808,6 +2808,7 @@ Mö@@ 4
 iet 4
 Betty 4
 Pau@@ 4
+7@@ 4
 buch 4
 Lehr@@ 4
 inter@@ 4
@@ -2854,12 +2855,12 @@ reali@@ 4
 zur@@ 4
 fla@@ 4
 Roman 4
-7 4
 kit@@ 4
 Kla@@ 4
 por@@ 4
 ad 4
 mus@@ 4
+Whi@@ 4
 Rom@@ 4
 nit@@ 4
 interess@@ 4
@@ -2888,6 +2889,7 @@ zufrie@@ 4
 Hi@@ 4
 perat@@ 4
 dessen 4
+stel@@ 4
 Ide@@ 4
 hof 4
 haf@@ 4
@@ -3027,7 +3029,7 @@ verlor@@ 3
 ruhi@@ 3
 use 3
 plan 3
-Dr. 3
+Dr 3
 erg@@ 3
 Musi@@ 3
 normal@@ 3
@@ -3040,6 +3042,7 @@ Deutsch@@ 3
 use@@ 3
 boo@@ 3
 wich 3
+rs 3
 stör@@ 3
 stronaut 3
 bst@@ 3
@@ -3124,7 +3127,6 @@ cool 2
 Ō@@ 2
 Anfan@@ 2
 ehme 2
-White 2
 cket 2
 danken 2
 ven@@ 2
@@ -3163,7 +3165,7 @@ port@@ 2
 verschie@@ 2
 Möglich@@ 2
 Dor@@ 2
-Mr. 2
+Mr 2
 beschä@@ 2
 brin@@ 2
 stro@@ 2
@@ -3173,7 +3175,6 @@ verhei@@ 2
 ws 2
 ou@@ 2
 P 2
-Whi@@ 2
 sky 2
 digital 2
 tst 2
@@ -3183,6 +3184,7 @@ ong 2
 ia 2
 Gre@@ 2
 sto@@ 2
+20@@ 2
 H 2
 int 2
 -@@ 2
@@ -3197,7 +3199,6 @@ wai@@ 2
 gy@@ 2
 Proble@@ 2
 gehol@@ 2
-rs 2
 inv@@ 2
 T 2
 edi@@ 2
