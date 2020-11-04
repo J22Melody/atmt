@@ -26,16 +26,16 @@ cat baseline/raw_data/tiny_train.en | perl moses_scripts/normalize-punctuation.p
 rm baseline/preprocessed_data/train.de.p
 rm baseline/preprocessed_data/train.en.p
 
-cat ./baseline/preprocessed_data/train.en ./baseline/preprocessed_data/train.de | subword-nmt learn-bpe --seed 1 -s 5000 -o ./baseline/preprocessed_data/bpe_code
+cat ./baseline/preprocessed_data/train.en ./baseline/preprocessed_data/train.de | subword-nmt learn-bpe -s 5000 -o ./baseline/preprocessed_data/bpe_code
 
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/train.en  > ./baseline/preprocessed_data/train_bpe.en
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/valid.en  > ./baseline/preprocessed_data/valid_bpe.en
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/test.en  > ./baseline/preprocessed_data/test_bpe.en
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/tiny_train.en  > ./baseline/preprocessed_data/tiny_train_bpe.en
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/train.en  > ./baseline/preprocessed_data/train_bpe.en
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/valid.en  > ./baseline/preprocessed_data/valid_bpe.en
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/test.en  > ./baseline/preprocessed_data/test_bpe.en
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/tiny_train.en  > ./baseline/preprocessed_data/tiny_train_bpe.en
 
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/train.de  > ./baseline/preprocessed_data/train_bpe.de
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/valid.de  > ./baseline/preprocessed_data/valid_bpe.de
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/test.de  > ./baseline/preprocessed_data/test_bpe.de
-subword-nmt apply-bpe --seed 1 -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/tiny_train.de  > ./baseline/preprocessed_data/tiny_train_bpe.de
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/train.de  > ./baseline/preprocessed_data/train_bpe.de
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/valid.de  > ./baseline/preprocessed_data/valid_bpe.de
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/test.de  > ./baseline/preprocessed_data/test_bpe.de
+subword-nmt apply-bpe -c ./baseline/preprocessed_data/bpe_code < ./baseline/preprocessed_data/tiny_train.de  > ./baseline/preprocessed_data/tiny_train_bpe.de
 
 python preprocess.py --target-lang en --source-lang de --dest-dir baseline/prepared_data/ --train-prefix baseline/preprocessed_data/train_bpe --valid-prefix baseline/preprocessed_data/valid_bpe --test-prefix baseline/preprocessed_data/test_bpe --tiny-train-prefix baseline/preprocessed_data/tiny_train_bpe --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000
