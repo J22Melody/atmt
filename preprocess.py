@@ -85,7 +85,7 @@ def main(args):
 def build_dictionary(filenames, tokenize=word_tokenize):
     dictionary = Dictionary()
     for filename in filenames:
-        with open(filename, 'r') as file:
+        with open(filename, 'r', encoding="utf-8") as file:
             for line in file:
                 for symbol in word_tokenize(line.strip()):
                     dictionary.add_word(symbol)
