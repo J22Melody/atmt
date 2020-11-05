@@ -99,6 +99,14 @@ def main(args):
     best_validate = float('inf')
 
     for epoch in range(last_epoch + 1, args.max_epoch):
+        # BPE Online Dropout (copy from preprocess_baseline_data.sh)
+        os.system('subword-nmt apply-bpe --dropout 0.1 -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 0 < ./baseline/preprocessed_data/train.en  > ./baseline/preprocessed_data/train_bpe.en')
+        os.system('subword-nmt apply-bpe --dropout 0.1 -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.en --vocabulary-threshold 0 < ./baseline/preprocessed_data/tiny_train.en  > ./baseline/preprocessed_data/tiny_train_bpe.en')
+        os.system('subword-nmt apply-bpe --dropout 0.1 -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 0 < ./baseline/preprocessed_data/train.de  > ./baseline/preprocessed_data/train_bpe.de')
+        os.system('subword-nmt apply-bpe --dropout 0.1 -c ./baseline/preprocessed_data/bpe_code --vocabulary baseline/prepared_data/dict.de --vocabulary-threshold 0 < ./baseline/preprocessed_data/tiny_train.de  > ./baseline/preprocessed_data/tiny_train_bpe.de')
+        os.system('python3.7 preprocess.py --target-lang en --source-lang de --vocab-src baseline/prepared_data/dict.de --vocab-trg baseline/prepared_data/dict.en --dest-dir baseline/prepared_data/ --train-prefix baseline/preprocessed_data/train_bpe --valid-prefix baseline/preprocessed_data/valid_bpe --test-prefix baseline/preprocessed_data/test_bpe --tiny-train-prefix baseline/preprocessed_data/tiny_train_bpe --threshold-src 1 --threshold-tgt 1 --num-words-src 4000 --num-words-tgt 4000')
+        train_dataset = load_data(split='train') if not args.train_on_tiny else load_data(split='tiny_train')
+
         train_loader = \
             torch.utils.data.DataLoader(train_dataset, num_workers=1, collate_fn=train_dataset.collater,
                                         batch_sampler=BatchSampler(train_dataset, args.max_tokens, args.batch_size, 1,
