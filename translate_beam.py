@@ -74,9 +74,12 @@ def main(args):
     progress_bar = tqdm(test_loader, desc='| Generation', leave=False)
 
     # Iterate over the test set
-    all_hyps = {}
+    best_n = 3
+    all_hyps = []
+    for _ in range(best_n):
+        all_hyps.append({})
     for i, sample in enumerate(progress_bar):
-
+        
         # Create a beam search object or every input sentence in batch
         batch_size = sample['src_tokens'].shape[0]
         searches = [BeamSearch(args.beam_size, args.max_len - 1, tgt_dict.unk_idx) for i in range(batch_size)]
@@ -190,33 +193,36 @@ def main(args):
                 search.prune()
 
         # Segment into sentences
-        best_sents = torch.stack([search.get_best()[1].sequence[1:].cpu() for search in searches])
-        decoded_batch = best_sents.numpy()
+        best_n_sents = torch.stack([torch.stack([best_sents[1].sequence[1:].cpu() for best_sents in search.get_best(best_n)]) for search in searches])
+        best_n_sents = best_n_sents.permute(1, 0, 2)
 
-        output_sentences = [decoded_batch[row, :] for row in range(decoded_batch.shape[0])]
+        for ii, best_sents in enumerate(best_n_sents): 
+            decoded_batch = best_sents.numpy()
 
-        # __QUESTION 6: What is the purpose of this for loop?
-        temp = list()
-        for sent in output_sentences:
-            first_eos = np.where(sent == tgt_dict.eos_idx)[0]
-            if len(first_eos) > 0:
-                temp.append(sent[:first_eos[0]])
-            else:
-                temp.append(sent)
-        output_sentences = temp
+            output_sentences = [decoded_batch[row, :] for row in range(decoded_batch.shape[0])]
 
-        # Convert arrays of indices into strings of words
-        output_sentences = [tgt_dict.string(sent) for sent in output_sentences]
+            # __QUESTION 6: What is the purpose of this for loop?
+            temp = list()
+            for sent in output_sentences:
+                first_eos = np.where(sent == tgt_dict.eos_idx)[0]
+                if len(first_eos) > 0:
+                    temp.append(sent[:first_eos[0]])
+                else:
+                    temp.append(sent)
+            output_sentences = temp
 
-        for ii, sent in enumerate(output_sentences):
-            all_hyps[int(sample['id'].data[ii])] = sent
+            # Convert arrays of indices into strings of words
+            output_sentences = [tgt_dict.string(sent) for sent in output_sentences]
 
+            for iii, sent in enumerate(output_sentences):
+                all_hyps[ii][int(sample['id'].data[iii])] = sent
 
     # Write to file
     if args.output is not None:
         with open(args.output, 'w') as out_file:
-            for sent_id in range(len(all_hyps.keys())):
-                out_file.write(all_hyps[sent_id] + '\n')
+            for sent_id in range(len(all_hyps[0].keys())):
+                for current_hyps in all_hyps:
+                    out_file.write(current_hyps[sent_id] + '\n')
 
 
 if __name__ == '__main__':
