@@ -28,8 +28,8 @@ def get_args():
     parser.add_argument('--max-len', default=100, type=int, help='maximum length of generated sequence')
 
     # Add beam search arguments
-    parser.add_argument('--beam-size', default=5, type=int, help='number of hypotheses expanded in beam search')
-    parser.add_argument('--alpha', default=0.6, type=float, help='hyper-parameter alpha for the softer length normalization in beam search')
+    parser.add_argument('--beam-size', default=6, type=int, help='number of hypotheses expanded in beam search')
+    parser.add_argument('--alpha', default=0.9, type=float, help='hyper-parameter alpha for the softer length normalization in beam search')
 
     return parser.parse_args()
 
