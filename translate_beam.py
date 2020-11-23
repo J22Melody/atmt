@@ -30,6 +30,7 @@ def get_args():
     # Add beam search arguments
     parser.add_argument('--beam-size', default=6, type=int, help='number of hypotheses expanded in beam search')
     parser.add_argument('--alpha', default=0.9, type=float, help='hyper-parameter alpha for the softer length normalization in beam search')
+    parser.add_argument('--gamma', default=1, type=float, help='hyper-parameter gamma for the diverse beam search')
 
     return parser.parse_args()
 
@@ -122,7 +123,7 @@ def main(args):
                     mask = None
 
                 node = BeamSearchNode(searches[i], emb, lstm_out, final_hidden, final_cell,
-                                      mask, torch.cat((go_slice[i], next_word)), log_p / lp(1, args.alpha), 1)
+                                      mask, torch.cat((go_slice[i], next_word)), (log_p - args.gamma * j) / lp(1, args.alpha), 1)
                 # __QUESTION 3: Why do we add the node with a negative score?
                 searches[i].add(-node.eval(), node)
 
@@ -181,6 +182,7 @@ def main(args):
 
                     # Add the node to current nodes for next iteration
                     else:
+                        log_p = log_p - args.gamma * j
                         log_p = (node.logp * lp(node.length, args.alpha) + log_p) / lp(node.length + 1, args.alpha)
                         node = BeamSearchNode(search, node.emb, node.lstm_out, node.final_hidden,
                                               node.final_cell, node.mask, torch.cat((prev_words[i][0].view([1]),
